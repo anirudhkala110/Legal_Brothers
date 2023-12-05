@@ -18,6 +18,7 @@ app.use(cors(
         credentials: true
     }
 ))
+app.options('/api/saveData', cors());
 
 app.use(bodyParser.json());
 
