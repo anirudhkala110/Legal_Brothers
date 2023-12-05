@@ -35,13 +35,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch('https://legal-brothers-app.vercel.app/api/saveData', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(updatedFormData),
-      });
+      const response = await axios.post('https://legal-brothers-app.vercel.app/api/saveData', {updatedFormData});
 
       if (response.ok) {
         // Redirect to the home page upon successful data storage
