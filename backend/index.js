@@ -15,10 +15,10 @@ app.use(bodyParser.json());
 
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://anirudhkala110:6RL4PMGvvOIxGDSt@cluster0.kypwz4x.mongodb.net/Legal_Brothers?retryWrites=true&w=majority')
-
-app.get('/', (req, res) => {
-  console.log("Connected");
-});
+// , {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
 app.post('/api/saveData', async (req, res) => {
   const formData = req.body;
