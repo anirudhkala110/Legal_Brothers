@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Titillium+Web&display=swap');
+
+.App {
+  /* background-image: url('./Images/security.png'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  backdrop-filter: brightness(0.5);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.rotate {
+  animation: rotate 2s infinite linear;
+  transform-origin: center;
+  backdrop-filter: drop-shadow();
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.nav-tab {
+  transition: .3s ease-in-out;
+  padding-bottom: 5%;
+  margin-bottom: 1%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.nav-tab:hover {
+
+  background: rgb(63, 151, 251) !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  /* padding-bottom: 0%; */
+}
+
+.nav-tab:active {
+  background: #000;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.nav-item {
+  transition: .2s ease-in-out;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid rgb(63, 151, 251) !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.nav-item:last-child {
+  border: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+li {
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.landing-one-base {
+  background-image: url('./Images/IPoriginalT.jpg');
+  filter: blur();
+  color: white;
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.landing-base-two {
+  background-image: url('./Images/IPoriginalT.jpg');
+  filter: blur();
+  color: white;
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.immi-law {
+  /* background-image: url('./Images/IPoriginalT.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.footer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+@media only screen and (max-width:1000px) {
+  .footer {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .footer div {
+    margin-bottom: 2%;
+    /* margin-left: 5%; */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+  }
+}
+
+
+@media only screen and (max-width:1000px) {
+  .width-more-than-1000 {
+    display: none !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .width-less-than-1000 {
+    display: block !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .contact-us-base {
+    display: block !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .contact-us-base div {
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .book-highlight {
+    display: block !important;
+  }
+
+  .book-highlight div {
+    width: 100% !important;
+  }
+
+  .location-contact {
+    display: block !important;
+  }
+}
+
+.width-more-than-1000 {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: end;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.width-less-than-1000 {
+  display: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.contact-us-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.width-more {
+  overflow-y: auto;
+}
+
+.width-more li:hover {
+  background: rgb(0, 166, 255);
+  color: white !important;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+  transform: scale(1.02);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.btn:focus {
+  border: none !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.offcanvas-li li:hover {
+  background-color: rgb(0, 200, 255);
+  color: white !important;
+  transition: .2s ease-in-out;
+}
+
+.book-highlight,
+.location-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-home {
+  background: #28272714 !important;
+  transition: .2s ease-in-out;
+}
+
+.back-home:hover {
+  background: rgba(3, 47, 47, 0.755) !important;
+  color: white !important;
+}
+
+.send-mail,
+.call-btn {
+  background: #28272714 !important;
+  transition: .2s ease-in-out;
+}
+
+.send-mail:hover {
+  background: rgba(41, 125, 18, 0.755) !important;
+  color: white !important;
+}
+
+.call-btn:hover {
+  background: rgba(5, 80, 118, 0.755) !important;
+  color: white !important;
+  transform: scale(1.05);
+}
+
+.blogs-base {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.blogs-base-div-1 {
+  width: 25%;
+  /* border: 1px solid; */
+}
+
+.blogs-base-div-1::-webkit-scrollbar {
+  width: 0;
+}
+
+.blogs-base-div-2 {
+  width: 70%;
+  /* border: 1px solid; */
+}
+
+@media only screen and (max-width:1000px) {
+  .blogs-base {
+    display: block;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .blogs-base-div-1 {
+    width: 100%;
+    /* border: 1px solid; */
+  }
+
+  .blogs-base-div-2 {
+    width: 100%;
+    /* border: 1px solid; */
+  }
+}
+
+.blog-div:hover {
+  transition: .2s ease-in-out !important;
+}
+
+.blog-div:hover {
+  cursor: pointer;
+  background-color: #000000c2 !important;
+  color: white;
+}
+
+.starter {
+  box-shadow: #0000006c 0px 0px 8000px 8000px;
+}
+
+@media only screen and (max-width:800px) {
+  .footer-element-focus-area {
+    display: block !important;
+  }
+}
+
+.footer-element-focus-area {
+  display: flex;
+}
+
+@media only screen and (max-Width:780px) {
+  .slider {
+    position: fixed;
+    margin-top: 10vh;
+    margin-left: 70vw !important;
+    /* margin-right: 10vw; */
+    z-index: 100;
+  }
+}
+
+@media only screen and (max-Width:525px) {
+  .slider {
+    position: fixed;
+    margin-top: 5vh;
+    margin-left: 70vw !important;
+    /* margin-right: 10vw; */
+    z-index: 100;
+  }
+}
+
+@media only screen and (max-Width:300px) {
+  .slider {
+    position: fixed;
+    margin-top: 10vh !important;
+    margin-left: 130vw !important;
+    /* margin-right: 10vw; */
+    z-index: 100;
+  }
+
+  .slider strong {
+    display: none;
+  }
+}
+@media only screen and (max-Width:200px) {
+  .slider {
+    position: fixed;
+    margin-top: 10vh !important;
+    margin-left: 150vw !important;
+    /* margin-right: 10vw; */
+    z-index: 100;
+  }
+
+  .slider strong {
+    display: none;
+  }
+}
+
+.slider {
+  position: fixed;
+  margin-top: 10vh;
+  margin-left: 90vw;
+  font-size: 12px !important;
+  z-index: 1;
+  transition: .2s ease-in-out;
+}
+
+.slider span {
+  display: none;
+}
+
+.slider:hover span {
+  display: block;
+}
+
+.slider:hover b,
+.br-in-slider {
+  display: none;
+}
