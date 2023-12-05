@@ -9,13 +9,12 @@ doenv.config()
 const app = express();
 const port = 8096 || process.env.PORT;
 
-// mongoose.connect('mongodb+srv://anirudhkala:gMuwTIoI3ojlp8R6@cluster0.pkh7czu.mongodb.net/test?retryWrites=true&w=majority')
 mongoose.connect('mongodb+srv://anirudhkala110:6RL4PMGvvOIxGDSt@cluster0.kypwz4x.mongodb.net/Legal_Brothers?retryWrites=true&w=majority')
 app.use(bodyParser.json());
 app.use(cors(
     {
-        origin: ["https://legal-brothers-online.vercel.app/"],
-        methods: ["POST", "GET", "PUT", "DELETE"],
+        origin: ["https://legal-brothers-online.vercel.app"],
+        methods: ["POST", "GET"],
         credentials: true
     }
 ))
@@ -40,7 +39,8 @@ app.post('/api/saveData', async (req, res) => {
             date: formData.date,
             time: formData.time,
         });
-
+        if(name == '' || mobile == "" || email == "" || query=="" || !name || !mobile || !email || !query)
+            return res.json({success:false}}
         // Save the new contact data to MongoDB
         await newContact.save();
 
