@@ -35,7 +35,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/saveData', {
+      const response = await fetch('https://legal-brothers-app.vercel.app/api/saveData', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -45,6 +45,7 @@ const Contact = () => {
 
       if (response.ok) {
         // Redirect to the home page upon successful data storage
+        alert("Message Sent. Now you are redirecting to Homepage . . . ");
         navigate('/');
       } else {
         console.error('Failed to save data to the backend.');
