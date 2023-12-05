@@ -10,7 +10,7 @@ const app = express();
 const port = 8096 || process.env.PORT;
 
 mongoose.connect('mongodb+srv://anirudhkala110:6RL4PMGvvOIxGDSt@cluster0.kypwz4x.mongodb.net/Legal_Brothers?retryWrites=true&w=majority')
-app.use(bodyParser.json());
+
 app.use(cors(
     {
         origin: ["https://legal-brothers-online.vercel.app"],
@@ -18,6 +18,8 @@ app.use(cors(
         credentials: true
     }
 ))
+
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     console.log("COnnected")
