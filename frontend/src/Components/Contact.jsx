@@ -17,15 +17,15 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
-
+  
+axios.defaults.withCredentials = true
   const handleSubmit = async (e) => {
-    axios.defaults.withCredentials = true
     e.preventDefault();
 
-    // Your form validation logic can go here
-
-    // Add date and time
-    const currentDate = new Date().toLocaleDateString();
+    if(formData.name==='' || !formData.name || formData.mobile==='' || !formData.mobile || formData.email==='' || !formData.email || formData.query==='' || !formData.query)
+      alert("Please Enter All the Fields")
+    else {
+       const currentDate = new Date().toLocaleDateString();
     const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     const updatedFormData = {
       ...formData,
@@ -47,16 +47,8 @@ const Contact = () => {
     } catch (error) {
       console.error('Error sending form data to the backend:', error);
     }
-
-    // Reset form after submission
-    setFormData({
-      name: '',
-      mobile: '',
-      email: '',
-      date: '',
-      time: '',
-      query: '',
-    });
+    }
+   
   };
 
   const handleButtonClick = (phoneNumber) => {
