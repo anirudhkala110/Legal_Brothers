@@ -13,7 +13,7 @@ mongoose.connect('mongodb+srv://anirudhkala110:6RL4PMGvvOIxGDSt@cluster0.kypwz4x
 
 app.use(cors(
     {
-        origin: ["https://legal-brothers-online.vercel.app"],,
+        origin: ["https://legal-brothers-online.vercel.app"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }
