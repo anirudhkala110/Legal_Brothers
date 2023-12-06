@@ -1,31 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import help from '../Images/helphand.png';
 import axios from 'axios'
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
   const navigate = useNavigate();
+  const form = useRef();
   const [name, setName] = useState()
   const [mobile, setMobile] = useState()
   const [email, setEmail] = useState()
   const [query, setQuery] = useState()
+  const [finalquery, setFQuery] = useState()
   const [date, setDate] = useState()
   const [time, setTime] = useState()
   const [id, setId] = useState()
   const currentDate = new Date().toLocaleDateString();
   const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-  axios.defaults.withCredentials=true
+  axios.defaults.withCredentials = true
   const handleSubmit = (e) => {
-    e.preventDefault();
     setDate(currentDate)
     setTime(currentTime)
     setId(Date.now())
+    e.preventDefault();
     if (name === '' || !name || mobile === '' || !mobile || email === '' || !email || query === '' || !query) {
       alert("Please Enter All the Fields")
     }
     else {
-      axios.post('https://legal-brothers-api.vercel.app/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
-      // axios.post('http://localhost:8096/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
+      // axios.post('https://legal-brothers-api.vercel.app/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
+      axios.post('http://localhost:8096/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
         .then(res => {
           console.log(res)
           if (res.data.success) {
@@ -37,6 +41,13 @@ const Contact = () => {
           }
         })
         .catch(err => console.log(err))
+      emailjs.sendForm('service_6cywveg', 'template_7rfedib', form.current, 'dvdh1BKhBwZ1IdY5y')
+        .then((result) => {
+          alert("Your  Query Has been saved.\nNow you are redirecting to the Homepage. . .")
+          navigate('/')
+        }, (error) => {
+          console.log(error.text);
+        });
     }
   }
 
@@ -44,6 +55,12 @@ const Contact = () => {
     window.location.href = `tel:${phoneNumber}`;
   };
 
+  const handleQuery = (e) => {
+    setQuery(e.target.value)
+    setDate(currentDate)
+    setTime(currentTime)
+    setFQuery(name + "\n" + email + "\n" + mobile + "\n" + date + "\n" + time + "\n" + e.target.value)
+  }
 
   return (
     <>
@@ -59,10 +76,10 @@ const Contact = () => {
               <img src={help} className="border shadow rounded border-secondary" style={{ width: "100%" }} alt="Helping hand" />
             </div>
             <div className="container border pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1 bg-white">
-              <form onSubmit={(e) => handleSubmit(e)}>
+              <form onSubmit={(e) => handleSubmit(e)} ref={form} >
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupName">Name</label>
-                  <input type="text" className="form-control rounded-0" id="formGroupName" placeholder="Your Valid Name" name="name" value={name} onChange={e => setName(e.target.value)} required />
+                  <input type="text" className="form-control rounded-0" id="formGroupName" placeholder="Your Valid Name" name="user_name" value={name} onChange={e => setName(e.target.value)} required />
                 </div>
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupMobile">Mobile Number</label>
@@ -70,7 +87,7 @@ const Contact = () => {
                 </div>
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupEmail">Email Address</label>
-                  <input type="email" className="form-control rounded-0" id="formGroupEmail" placeholder="Email Address" name="email" value={email} onChange={e => setEmail(e.target.value)} required />
+                  <input type="email" className="form-control rounded-0" id="formGroupEmail" placeholder="Email Address" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required />
                 </div>
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupQuery">Query / Information / Problem</label>
@@ -81,13 +98,13 @@ const Contact = () => {
                     rows={5}
                     style={{ resize: "none" }}
                     id="formGroupQuery"
-                    name="query"
                     value={query}
-                    onChange={e => setQuery(e.target.value)}
+                    onChange={e => handleQuery(e)}
                     placeholder="Enter your query here" required
                   />
+                  <textarea name="message" value={finalquery} style={{ display: "none" }} />
                 </div>
-                <button className="btn border-0 rounded-0 mb-2 send-mail">Send Mail</button>
+                <button className="btn border-0 rounded-0 mb-2 send-mail" value="Send">Send Mail</button>
                 <button className="btn border-0 rounded-0 ms-2 mb-2 call-btn" onClick={() => handleButtonClick(7668490213)}>Make a Call</button>
                 <Link to="/" className="text-decoration-none">
                   <button className="btn ms-2 border-0 rounded-0 mb-2 back-home">Back to Home</button>

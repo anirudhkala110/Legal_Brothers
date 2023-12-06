@@ -15,6 +15,7 @@ import TermsConditions from './Utils/TermsConditions';
 import Accessibility from './Utils/Accessibility';
 import PropertyAuditing from './Assest/PropertyAuditing';
 import { useEffect, useState } from 'react';
+import Home from './Components/Home';
 function App() {
   const initialI = parseInt(localStorage.getItem('i')) || 0;
   const [i, setI] = useState(initialI);
@@ -34,7 +35,7 @@ function App() {
   };
 
   return (
-    <div className='bg-black' style={{minWidth:"350px"}}>
+    <div className='bg-black' style={{ minWidth: "350px" }}>
       {
         i === 0 ? <div className='min-vh-100 d-flex align-items-center justify-content-center bg-light'>
           <div className='card w-25 starter border border-black'>
@@ -65,6 +66,7 @@ function App() {
               <Router>
                 <Routes>
                   <Route exact path="/" element={<Landing />} />
+                  <Route exact path='/home' element={<Home />} />
                   <Route exact path='/about-us' element={<AboutUs />} />
                   <Route exact path='/contact-us' element={<Contact />} />
                   <Route exact path="/all-case-study" element={<AllCasesStudies />} />
