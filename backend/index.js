@@ -31,6 +31,16 @@ app.get('/', (req, res) => {
     return res.json('Connected')
 })
 
+app.get('/api/getAllData', async (req, res) => {
+    try {
+        const allData = await Contact.find({});
+
+        res.json({ success: true, data: allData });
+    } catch (error) {
+        console.error('Error fetching data from MongoDB:', error);
+        res.status(500).json({ success: false, error: 'Internal Server Error' });
+    }
+});
 
 app.post('/api/saveData', async (req, res) => {
     const name = req.body.name;
