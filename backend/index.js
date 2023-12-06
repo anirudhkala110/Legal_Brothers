@@ -32,6 +32,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/allData', async (req, res) => {
+    console.log("Complete Data")
     try {
         const allData = await Contact.find({});
         console.log(allData)
