@@ -1,8 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const BusinessLaw = () => {
   return (
     <div className='pt-5 bg-light'>
+      <Helmet>
+        <title>Legal Brothers - Business Law & Corporations</title>
+        <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />
+      </Helmet>
       <div className='mt-4 py-3 container' style={{ background: "rgb(0 0 0 / 5%)", height: "100%" }}>
         <center className='fs-1 fw-bolder border-bottom py-3 mt-5 border-secondary border-3' style={{ color: "rgb(217, 7, 0)" }}>Business Law & Corporations</center>
         <div className='container text-dark py-4' style={{ minHeight: "80vh" }}>

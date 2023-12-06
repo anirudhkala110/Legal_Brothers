@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet';
 
 const AllCasesStudies = () => {
   const [id, setId] = useState(1)
@@ -58,6 +59,10 @@ const AllCasesStudies = () => {
   };
   return (
     <div className='pt-4 d-flex justify-content-center bg-white' style={{ minHeight: "70vh", color: "white" }}>
+      <Helmet>
+        <title>Legal Brothers - Blogs</title>
+        <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />
+      </Helmet>
       <div className='px-4 bg-white text-black container ' style={{ background: "#00000070", minHeight: "90vh" }}>
         <center className='fs-2 fw-semibold'>Updates For You</center>
         <hr />

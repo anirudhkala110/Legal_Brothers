@@ -105,7 +105,7 @@ const Navbar = () => {
                                         <li> <a href='/property-auditing-law' className="text-decoration-none mb-2 text-black ps-3" >Constitutional Perspective</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item dropdown">
+                                {/* <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Resources
                                     </a>
@@ -117,7 +117,7 @@ const Navbar = () => {
                                         </li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
-                                </li>
+                                </li> */}
                             </ul>
                             <li class="nav-item text-black py-2">
                                 <a class="nav-link" href="/contact-us">Book a Free Session</a>

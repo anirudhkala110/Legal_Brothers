@@ -1,12 +1,17 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const PrivacyPolicy = () => {
     return (
         <div className='pt-5 bg-light pb-2'>
-            <div className='container w-75 mt-4 p-4'>
-                <div className='container bg-white shadow w-75 rounded p-5 border'>
+            <Helmet>
+                <title>Legal Brothers - Privacy Policy</title>
+                <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />
+            </Helmet>
+            <div className='container w-75 mt-4 p-4' style={{minWidth:"350px"}}>
+                <div className='container bg-white shadow rounded p-5 border'>
                     <div className="fs-2 my-3" >Privacy Policy</div>
-                    <hr/>
+                    <hr />
                     <div className="my-3" >Legal Brothers respects your privacy.</div>
                     <div className="my-3" >
                         <div className="mb-4" >We do not collect personally identifiable information from individuals through this website unless it is provided voluntarily and knowingly like on our e-newsletter subscription or donation forms. Any and all personal information you voluntarily provide is protected under the provisions of Canada’s federal privacy legislation.</div>

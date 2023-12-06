@@ -1,13 +1,18 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const TermsConditions = () => {
     return (
         <div className='pt-5 bg-light'>
-            <div className='mt-4 w-75 p-4 container bg-light'>
-                <div className='container bg-white p-4 shadow rounded border w-75'>
+            <Helmet>
+                <title>Legal Brothers - Terms & Conditions</title>
+                <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />
+            </Helmet>
+            <div className='mt-4 w-75 p-4 container bg-light' style={{ minWidth: "350px" }}>
+                <div className='container bg-white p-4 shadow rounded border'>
                     <div className="fs-1 mb-2">
                         Terms & Conditions
-                    <hr/>
+                        <hr />
                     </div>
                     <div className="mb-4">
                         Terms of (Re)Use
@@ -18,12 +23,12 @@ const TermsConditions = () => {
                     <div className="mb-4">
                         Our sole request is that you please do not use Legal Brothers materials and resources for financial gain. For example, please do not sell our publications (unless by specific permission) or attempt to pass them off as your own intellectual property. If you do reference or quote Legal Brothers work, please indicate the precise source.
                     </div>
-                    <hr/>
+                    <hr />
                     <div className="mb-2 fs-5 fw-semibold">
                         What this means in technical copyright terms:
                     </div>
                     <div className="mb-4">
-                    Content on this website is licensed under a Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported license. You are free to copy, distribute and transmit the work under the following conditions: the work must be attributed to Legal Brothers; you may not use this work for commercial purposes; you may not alter, transform, or build upon this work. To learn more about Creative Commons licences, visit creativecommons.org.
+                        Content on this website is licensed under a Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported license. You are free to copy, distribute and transmit the work under the following conditions: the work must be attributed to Legal Brothers; you may not use this work for commercial purposes; you may not alter, transform, or build upon this work. To learn more about Creative Commons licences, visit creativecommons.org.
                     </div>
                 </div>
             </div>
