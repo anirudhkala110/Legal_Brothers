@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
     return res.json('Connected')
 })
 
-app.get('/getAllData', async (req, res) => {
+app.get('/allData', async (req, res) => {
     try {
         const allData = await Contact.find({});
         console.log(allData)
