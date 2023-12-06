@@ -14,16 +14,14 @@ mongoose.connect('mongodb+srv://anirudhkala110:6RL4PMGvvOIxGDSt@cluster0.kypwz4x
 app.use(bodyParser.json());
 app.use(cors(
     {
-        // origin: ["https://legal-brothers.vercel.app"],
-        origin: ["https://legal-brothers.vercel.app/"],
+        origin: ["https://legal-brothers.vercel.app"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }
 ))
 app.options('/api/saveData', cors(
     {
-        // origin: ["https://legal-brothers.vercel.app"],
-        origin: ["https://legal-brothers.vercel.app/"],
+        origin: ["https://legal-brothers.vercel.app"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }
@@ -64,8 +62,6 @@ app.post('/api/saveData', async (req, res) => {
     }
 });
 
-// Start the server and read data from data.json
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
-    readAndStoreData();
 });
