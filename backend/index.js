@@ -19,7 +19,7 @@ app.use(cors(
         credentials: true
     }
 ))
-app.options('/api/saveData', cors(
+app.options('/saveData', cors(
     {
         origin: ["https://legal-brothers.vercel.app"],
         methods: ["POST", "GET", "PUT", "DELETE"],
@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
     return res.json('Connected')
 })
 
-app.get('/api/getAllData', async (req, res) => {
+app.get('/getAllData', async (req, res) => {
     try {
         const allData = await Contact.find({});
         console.log(allData)
@@ -42,7 +42,7 @@ app.get('/api/getAllData', async (req, res) => {
     }
 });
 
-app.post('/api/saveData', async (req, res) => {
+app.post('/saveData', async (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const query = req.body.query;
