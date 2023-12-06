@@ -4,52 +4,41 @@ import help from '../Images/helphand.png';
 import axios from 'axios'
 const Contact = () => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    name: '',
-    mobile: '',
-    email: '',
-    date: '',
-    time: '',
-    query: '',
-  });
+  const [name, setName] = useState()
+  const [mobile, setMobile] = useState()
+  const [email, setEmail] = useState()
+  const [query, setQuery] = useState()
+  const [date, setDate] = useState()
+  const [time, setTime] = useState()
+  const [id, setId] = useState()
+  const currentDate = new Date().toLocaleDateString();
+  const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
-  
-axios.defaults.withCredentials = true
-  const handleSubmit = async (e) => {
+  axios.defaults.withCredentials = true
+  const handleSubmit = (e) => {
+    setDate(currentDate)
+    setTime(currentTime)
+    setId(Date.now())
     e.preventDefault();
-
-    if(formData.name==='' || !formData.name || formData.mobile==='' || !formData.mobile || formData.email==='' || !formData.email || formData.query==='' || !formData.query)
+    if (name === '' || !name || mobile === '' || !mobile || email === '' || !email || query === '' || !query) {
       alert("Please Enter All the Fields")
+    }
     else {
-       const currentDate = new Date().toLocaleDateString();
-    const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    const updatedFormData = {
-      ...formData,
-      date: formData.date || currentDate,
-      time: formData.time || currentTime,
-      id: Date.now(), // Add a unique identifier
-    };
-
-    try {
-      const response = await axios.post('https://legal-brothers-app.vercel.app/api/saveData', {updatedFormData});
-
-      if (response.ok) {
-        // Redirect to the home page upon successful data storage
-        alert("Message Sent. Now you are redirecting to Homepage . . . ");
-        navigate('/');
-      } else {
-        console.error('Failed to save data to the backend.');
-      }
-    } catch (error) {
-      console.error('Error sending form data to the backend:', error);
+      axios.post('https://legal-brothers-api.vercel.app/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
+      // axios.post('http://localhost:8096/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
+        .then(res => {
+          console.log(res)
+          if (res.data.success) {
+            alert("Your  Query Has been saved.\nNow you are redirecting to the Homepage. . .")
+            window.location.href = '/'
+          }
+          else {
+            alert("Sorry, not able to send your query.\nTry again after some time.")
+          }
+        })
+        .catch(err => console.log(err))
     }
-    }
-   
-  };
+  }
 
   const handleButtonClick = (phoneNumber) => {
     window.location.href = `tel:${phoneNumber}`;
@@ -73,15 +62,15 @@ axios.defaults.withCredentials = true
               <form onSubmit={(e) => handleSubmit(e)}>
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupName">Name</label>
-                  <input type="text" className="form-control rounded-0" id="formGroupName" placeholder="Your Valid Name" name="name" value={formData.name} onChange={handleInputChange} required />
+                  <input type="text" className="form-control rounded-0" id="formGroupName" placeholder="Your Valid Name" name="name" value={name} onChange={e => setName(e.target.value)} required />
                 </div>
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupMobile">Mobile Number</label>
-                  <input type="number" className="form-control rounded-0" id="formGroupMobile" placeholder="Mobile Number" name="mobile" value={formData.mobile} onChange={handleInputChange} required />
+                  <input type="number" className="form-control rounded-0" id="formGroupMobile" placeholder="Mobile Number" name="mobile" value={mobile} onChange={e => setMobile(e.target.value)} required />
                 </div>
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupEmail">Email Address</label>
-                  <input type="email" className="form-control rounded-0" id="formGroupEmail" placeholder="Email Address" name="email" value={formData.email} onChange={handleInputChange} required />
+                  <input type="email" className="form-control rounded-0" id="formGroupEmail" placeholder="Email Address" name="email" value={email} onChange={e => setEmail(e.target.value)} required />
                 </div>
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupQuery">Query / Information / Problem</label>
@@ -89,12 +78,12 @@ axios.defaults.withCredentials = true
                     type="text"
                     className="form-control rounded-0"
                     cols={30}
-                    rows={9}
+                    rows={5}
                     style={{ resize: "none" }}
                     id="formGroupQuery"
                     name="query"
-                    value={formData.query}
-                    onChange={handleInputChange}
+                    value={query}
+                    onChange={e => setQuery(e.target.value)}
                     placeholder="Enter your query here" required
                   />
                 </div>
