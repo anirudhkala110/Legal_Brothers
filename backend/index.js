@@ -15,12 +15,19 @@ app.use(bodyParser.json());
 app.use(cors(
     {
         // origin: ["https://legal-brothers.vercel.app"],
-        origin: ["https://legal-brothers.vercel.app"],
+        origin: ["https://legal-brothers.vercel.app/"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }
 ))
-
+app.options('/api/saveData', cors(
+    {
+        // origin: ["https://legal-brothers.vercel.app"],
+        origin: ["https://legal-brothers.vercel.app/"],
+        methods: ["POST", "GET", "PUT", "DELETE"],
+        credentials: true
+    }
+));
 app.get('/', (req, res) => {
     console.log("Connected")
     return res.json('Connected')
