@@ -14,8 +14,8 @@ mongoose.connect('mongodb+srv://anirudhkala110:6RL4PMGvvOIxGDSt@cluster0.kypwz4x
 app.use(bodyParser.json());
 app.use(cors(
     {
-        // origin: ["https://heliverse-1ugi.vercel.app"],
-        origin: [""],
+        // origin: ["https://legal-brothers.vercel.app"],
+        origin: ["https://legal-brothers.vercel.app"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }
