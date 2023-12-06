@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 app.get('/api/getAllData', async (req, res) => {
     try {
         const allData = await Contact.find({});
-
+        console.log(allData)
         res.json({ success: true, data: allData });
     } catch (error) {
         console.error('Error fetching data from MongoDB:', error);
