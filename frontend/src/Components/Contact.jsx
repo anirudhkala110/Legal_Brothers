@@ -24,7 +24,7 @@ const Contact = () => {
       alert("Please Enter All the Fields")
     }
     else {
-      axios.post('https://legal-brothers-api.vercel.app/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
+      axios.post('https://legal-brothers-api.vercel.app/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
       // axios.post('http://localhost:8096/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
         .then(res => {
           console.log(res)
