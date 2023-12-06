@@ -14,12 +14,12 @@ const Contact = () => {
   const currentDate = new Date().toLocaleDateString();
   const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-  axios.defaults.withCredentials = true
+  axios.defaults.withCredentials=true
   const handleSubmit = (e) => {
+    e.preventDefault();
     setDate(currentDate)
     setTime(currentTime)
     setId(Date.now())
-    e.preventDefault();
     if (name === '' || !name || mobile === '' || !mobile || email === '' || !email || query === '' || !query) {
       alert("Please Enter All the Fields")
     }
