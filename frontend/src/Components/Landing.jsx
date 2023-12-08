@@ -11,6 +11,7 @@ import Property from "../Images/property.png"
 import Logo from '../Images/logo.png'
 import Rt from '../Images/right.png'
 import ImageSlider from '../Images/ImageSlider'
+import { Helmet } from 'react-helmet'
 
 
 const imageUrls = [
@@ -21,6 +22,11 @@ const Landing = () => {
     const [ava, setAva] = useState(false)
     return (
         <div className='pt-' style={{ minHeight: "100vh", background: "white" }}>
+            <Helmet>
+                <title>Legal Brothers</title>
+                <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />
+                <meta name='keywords' content='Legal Brothers, Court Cases, Family Cases, Immigration, Child Custody, Property Drafting, Property Auditing, Legal Information, Government Acts, Advocates, Best Advocates in Lucknow, Best Advocate in Lucknow, Best Advocate in India, Best Advocate New Delhi, Best Advocates in Lucknow and Near Locations, Legal Information and queries, Legal Information, Legal Services, Court Representation, Legal Advice, Trial Attorneys, Court Proceedings, Legal Consultation, Legal Advocacy, Legal Aid, Criminal Defense, Civil Litigation, Legal Resources, Legal Support, Court Case Assistance, Legal Counsel, Judicial System, Legal Rights, Legal Assistance, Attorney Services, Courtroom Representation, Lucknow Legal Services, Lucknow Court Representation, Lucknow Trial Attorneys, Lucknow Legal Consultation, Court Case Help in Lucknow' />
+            </Helmet>
             {ava ? <center className='w-50 bg-light shadow py-4 px-3' style={{ height: "400px" }}>
                 <h2>This Page is under construction</h2>
                 Please Click <Link to="/about-us" className='text-decoration-none fw-bold'>About Us</Link> to see the demo of the site
