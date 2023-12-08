@@ -9,6 +9,12 @@ import BL from "../Images/BusForm.png"
 import Visa from "../Images/visa.png"
 import Property from "../Images/property.png"
 import Logo from '../Images/logo.png'
+import ImageSlider from '../Images/ImageSlider'
+
+
+const imageUrls = [
+    { sadv, cdd, exp, FL, CD, BL, Visa, Property, Logo }
+]
 
 const Landing = () => {
     const [ava, setAva] = useState(false)
@@ -23,7 +29,7 @@ const Landing = () => {
                 </div>
             </center> :
                 <div className=''>
-                    <div className='text-light my-2 px-4 py-5 landing-one-base' style={{minWidth:"350px"}}>
+                    <div className='text-light my-2 px-4 py-5 landing-one-base' style={{ minWidth: "350px" }}>
                         <div className='container px-5' style={{ backdropFilter: "blur(0px)", maxHeight: "" }}>
                             <div className='mb-4 fs-4 fw-bold' style={{ color: "#D90700" }}>
                                 Experience. Compassion. Integrity.
@@ -93,6 +99,9 @@ const Landing = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div style={{margin: "0 auto", position: "relative",maxHeight:"450px" }} className='ImageSlider py-2 bg-light'>
+                        <ImageSlider />
                     </div>
                     <div className='my-5 p-1' style={{ background: "black", minHeight: "10vh" }}>
                         <div className='container text-white px-5 book-highlight border-white'>

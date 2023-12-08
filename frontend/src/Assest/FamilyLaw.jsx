@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 
 const FamilyLaw = () => {
   return (
-    <div className='pt-5 bg-white'>
+    <div className='py-2 bg-white'>
       <Helmet>
         <title>Legal Brothers - Family Laws</title>
         <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />

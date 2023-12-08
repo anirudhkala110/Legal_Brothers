@@ -16,6 +16,7 @@ import Accessibility from './Utils/Accessibility';
 import PropertyAuditing from './Assest/PropertyAuditing';
 import { useEffect, useState } from 'react';
 import { Helmet } from "react-helmet"
+import StudentLaws from './Assest/StudentLaws';
 
 function App() {
   const initialI = parseInt(localStorage.getItem('i')) || 0;
@@ -79,6 +80,7 @@ function App() {
                   <Route exact path="/business-law" element={<BusinessLaw />} />
                   <Route exact path="/immigration-law" element={<ImmigrationLaw />} />
                   <Route exact path="/property-auditing-law" element={<PropertyAuditing />} />
+                  <Route exact path="/student-laws" element={<StudentLaws />} />
                   <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
                   <Route exact path="/terms-conditions" element={<TermsConditions />} />
                   <Route exact path="/accessibility" element={<Accessibility />} />
