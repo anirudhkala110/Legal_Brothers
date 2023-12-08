@@ -25,7 +25,7 @@ const Landing = () => {
             <Helmet>
                 <title>Legal Brothers</title>
                 <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />
-                <meta name='keywords' content='Legal Brothers, Court Cases, Family Cases, Immigration, Child Custody, Property Drafting, Property Auditing, Legal Information, Government Acts, Advocates, Best Advocates in Lucknow, Best Advocate in Lucknow, Best Advocate in India, Best Advocate New Delhi, Best Advocates in Lucknow and Near Locations, Legal Information and queries, Legal Information, Legal Services, Court Representation, Legal Advice, Trial Attorneys, Court Proceedings, Legal Consultation, Legal Advocacy, Legal Aid, Criminal Defense, Civil Litigation, Legal Resources, Legal Support, Court Case Assistance, Legal Counsel, Judicial System, Legal Rights, Legal Assistance, Attorney Services, Courtroom Representation, Lucknow Legal Services, Lucknow Court Representation, Lucknow Trial Attorneys, Lucknow Legal Consultation, Court Case Help in Lucknow' />
+                <meta name='keywords' content='Legal Brothers, Court Cases, Family Cases, Immigration, Child Custody, Property Drafting, Property Auditing, Legal Information, Government Acts, Advocates, Best Advocates in Lucknow, Best Advocate in Lucknow, Best Advocate in India, Best Advocate New Delhi, Best Advocates in Lucknow and Near Locations, Legal Information and queries, Legal Information, Legal Services, Court Representation, Legal Advice, Trial Attorneys, Court Proceedings, Legal Consultation, Legal Advocacy, Legal Aid, Criminal Defense, Civil Litigation, Legal Resources, Legal Support, Court Case Assistance, Legal Counsel, Judicial System, Legal Rights, Legal Assistance, Attorney Services, Courtroom Representation, Lucknow Legal Services, Lucknow Court Representation, Lucknow Trial Attorneys, Lucknow Legal Consultation, Court Case Help in Lucknow,Legal RoadmapAccident Advocacy,Justice Journey,Advocate Allies,Injury Insight,Legal Compass,Claim Clarity,Accident Advocates,Rights Rescued,Justice Junction' />
             </Helmet>
             {ava ? <center className='w-50 bg-light shadow py-4 px-3' style={{ height: "400px" }}>
                 <h2>This Page is under construction</h2>
@@ -65,7 +65,7 @@ const Landing = () => {
                                 <span class="bi bi-telephone-fill fs-5 fw-bold" style={{ color: "#D90700" }}>&nbsp;&nbsp;Free Legal Consultation</span>
                                 <br />
                                 <span className='fs-4 fw-bold'>
-                                    +90-8975648569
+                                    +90-8172846811
                                 </span>
                             </div>
                         </div>
@@ -110,16 +110,16 @@ const Landing = () => {
                     <div style={{ margin: "0 auto", position: "relative", maxHeight: "450px" }} className='ImageSlider py-2 bg-light'>
                         <ImageSlider />
                     </div>
-                    <div className='my-5 p-1' style={{ background: "black", minHeight: "10vh" }}>
-                        <div className='container text-white px-5 book-highlight border-white'>
-                            <div className=' fs-3 fw-bold btn-outline-primary border-0 btn'>
+                    <div className='my-5 d-flex justify-content-center p-1' style={{ background: "black", minHeight: "20vh" }}>
+                        <div className='container  text-white px-5 book-highlight border-white row'>
+                            <div className=' fs-3 fw-bold btn-outline-primary border-0 btn col-4 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4'>
                                 Book a Free Consultation
                             </div>
-                            <div className='text-white' style={{ maxWidth: "500px" }}>
+                            <div className='text-white col-4 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4'>
                                 We are available for a no-cost consultation to better understand your legal needs, and to provide guidance on the best next steps.
                             </div>
-                            <div className=''>
-                                <li class="nav-item my-4 btn text-white py-2" style={{ background: "#D90700" }}>
+                            <div className='col-4 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4'>
+                                <li class="nav-item my-4 btn text-white py-2 w-100" style={{ background: "#D90700" }}>
                                     <a class="nav-link" href="/contact-us">Free Legal Consultation</a>
                                 </li>
                             </div>
@@ -128,46 +128,62 @@ const Landing = () => {
                     <div className='my-5 py-3'>
                         <div className='container'>
                             <center className='fs-1 my-5 border-bottom border-3 fw-bold'>Practice Areas​</center>
-                            <div className='row my-4 bg-light px-1'>
-                                <Link to='/family-law' className=' col-sm-12 g-2 text-decoration-none text-black border p-3 col-md-6 col-xl-3 mb-3 '>
-                                    <div>
+                            <div className='row my-4 px-1'>
+                                <Link to='/family-law' className=' col-sm-12 g-2 rounded text-decoration-none text-black p-1 col-md-6 col-xl-3 mb-3 '>
+                                    <div className='bg-white p-1 shadow rounded card-subjects' style={{ height: "100%" }}>
                                         <img src={FL} width={40} />
-                                        <div className='fs-4 my-2 fw-bold btn btn-outline-primary w-100'>Family Law</div>
+                                        <center className='fs-4 my-2 fw-bold rounded-0 sub-main-topic border-0 border-primary w-100'>Family Law</center>
                                         <hr />
-                                        <div>Our family law division is here to assist you in navigating the intricacies of family legal matters. From divorce and child custody disputes to spousal support and adoption, our family law attorneys have the expertise to ensure that your rights and the well-being of your family are protected.</div>
+                                        <div className='p-2'>Our family law division is here to assist you in navigating the intricacies of family legal matters. From divorce and child custody disputes to spousal support and adoption, our family law attorneys have the expertise to ensure that your rights and the well-being of your family are protected.</div>
                                     </div>
                                 </Link>
-                                <Link to='/criminal-defense' className=' col-sm-12 g-2 text-decoration-none text-black border p-3 col-md-6 col-xl-3 mb-3 '>
-                                    <div>
+                                <Link to='/criminal-defense' className=' col-sm-12 g-2 rounded text-decoration-none text-black p-1 col-md-6 col-xl-3 mb-3 '>
+                                    <div className='bg-white p-1 shadow rounded card-subjects' style={{ height: "100%" }}>
                                         <img src={CD} width={40} />
-                                        <div className='fs-4 my-2 fw-bold btn btn-outline-primary w-100'>Criminal Defense</div>
+                                        <center className='fs-4 my-2 fw-bold rounded-0 sub-main-topic border-0 border-primary w-100'>Criminal Defense</center>
                                         <hr />
-                                        <div>In the face of criminal charges, our criminal defense lawyers will be your strongest advocates. We are committed to safeguarding your rights and providing a vigorous defense, no matter the nature or severity of the charges against you.</div>
+                                        <div className='p-2'>In the face of criminal charges, our criminal defense lawyers will be your strongest advocates. We are committed to safeguarding your rights and providing a vigorous defense, no matter the nature or severity of the charges against you.</div>
                                     </div>
                                 </Link>
-                                <Link to='/business-law' className=' col-sm-12 g-2 text-decoration-none text-black border p-3 col-md-6 col-xl-3 mb-3 '>
-                                    <img src={BL} width={40} />
-                                    <div className='fs-4 my-2 fw-bold btn btn-outline-primary w-100'>Business & Co-operate Law</div>
-                                    <hr />
-                                    <div> For businesses of all sizes, our business law attorneys offer a comprehensive range of legal solutions. We provide expert counsel in areas such as contract drafting, business formation, intellectual property, and employment law matters.</div>
+                                <Link to='/business-law' className=' col-sm-12 g-2 rounded text-decoration-none text-black p-1 col-md-6 col-xl-3 mb-3 '>
+                                    <div className='bg-white p-1 shadow rounded card-subjects' style={{ height: "100%" }}>
+                                        <img src={BL} width={40} />
+                                        <center className='fs-4 my-2 fw-bold rounded-0 sub-main-topic border-bottom-0 border-0 border-primary w-100'>Corporate Laws</center>
+                                        <hr />
+                                        <div className='p-2'> For businesses of all sizes, our business law attorneys offer a comprehensive range of legal solutions. We provide expert counsel in areas such as contract drafting, business formation, intellectual property, and employment law matters.</div>
+                                    </div>
                                 </Link>
-                                <Link to='/immigration-law' className=' col-sm-12 g-2 text-decoration-none text-black border p-3 col-md-6 col-xl-3 mb-3 '>
-                                    <img src={Visa} width={60} />
-                                    <div className='fs-4 my-2 fw-bold btn btn-outline-primary w-100'>Immigration Law</div>
-                                    <hr />
-                                    <div>Navigating immigration issues can be complex and challenging. Our immigration lawyers are here to help individuals and families with visa applications, green card processes, deportation defense, and other immigration-related concerns.</div>
+                                <Link to='/immigration-law' className=' col-sm-12 g-2 rounded text-decoration-none text-black p-1 col-md-6 col-xl-3 mb-3 '>
+                                    <div className='bg-white p-1 shadow rounded card-subjects' style={{ height: "100%" }}>
+                                        <img src={Visa} width={60} />
+                                        <center className='fs-4 my-2 fw-bold rounded-0 sub-main-topic border-0 border-primary w-100'>Immigration Law</center>
+                                        <hr />
+                                        <div className='p-2'>Navigating immigration issues can be complex and challenging. Our immigration lawyers are here to help individuals and families with visa applications, green card processes, deportation defense, and other immigration-related concerns.</div>
+                                    </div>
                                 </Link>
-                                <Link to='/property-auditing-law' className=' col-sm-12 g-2 text-decoration-none text-black border p-3 col-md-6 col-xl-3 mb-3 '>
-                                    <img src={Property} width={60} />
-                                    <div className='fs-4 my-2 fw-bold btn btn-outline-primary w-100'>Property Auditing</div>
-                                    <hr />
-                                    <div>In India, the legal framework for properties auditing primarily falls under the purview of property laws, taxation laws, and corporate laws.</div>
+                                <Link to='/property-auditing-law' className=' col-sm-12 g-2 rounded text-decoration-none text-black p-1 col-md-6 col-xl-3 mb-3 '>
+                                    <div className='bg-white p-1 shadow rounded card-subjects' style={{ height: "100%" }}>
+                                        <img src={Property} width={60} />
+                                        <center className='fs-4 my-2 fw-bold rounded-0 sub-main-topic border-0 border-primary w-100'>Property Auditing</center>
+                                        <hr />
+                                        <div className='p-2'>In India, the legal framework for properties auditing primarily falls under the purview of property laws, taxation laws, and corporate laws.</div>
+                                    </div>
                                 </Link>
-                                <Link to='/student-laws' className=' col-sm-12 g-2 text-decoration-none text-black border p-3 col-md-6 col-xl-3 mb-3 '>
-                                    <img src={Rt} width={60} />
-                                    <div className='fs-4 my-2 fw-bold btn btn-outline-primary w-100'>Student Laws</div>
-                                    <hr />
-                                    In <b>India, </b> An advocate, specializing in education law in India, can handle various legal matters related to students, educational institutions, and the education system.
+                                <Link to='/student-laws' className=' col-sm-12 g-2 rounded text-decoration-none text-black p-1 col-md-6 col-xl-3 mb-3 '>
+                                    <div className='bg-white p-1 shadow rounded card-subjects' style={{ height: "100%" }}>
+                                        <img src={Rt} width={60} />
+                                        <center className='fs-4 my-2 fw-bold rounded-0 sub-main-topic border-0 border-primary w-100'>Student Laws</center>
+                                        <hr />
+                                        <div className='p-2'> In <b>India, </b> An advocate, specializing in education law in India, can handle various legal matters related to students, educational institutions, and the education system.</div>
+                                    </div>
+                                </Link>
+                                <Link to='/accidental-laws' className=' col-sm-12 g-2 rounded text-decoration-none text-black p-1 col-md-6 col-xl-3 mb-3 '>
+                                    <div className='bg-white p-1 shadow rounded card-subjects' style={{ height: "100%" }}>
+                                        <img src={Rt} width={60} />
+                                        <center className='fs-4 my-2 fw-bold rounded-0 sub-main-topic border-0 border-primary w-100'>Injury Insight</center>
+                                        <hr />
+                                        <div className='p-2'> In <b>India, </b>In many cases, accidents involve personal injury, and personal injury law comes into play. If someone is injured due to the negligence of another party (such as a car accident), the injured party may have the right to seek compensation for medical expenses, lost wages, pain, and suffering. Personal injury lawyers often handle such cases.</div>
+                                    </div>
                                 </Link>
                             </div>
                         </div>

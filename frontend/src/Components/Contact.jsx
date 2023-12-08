@@ -68,7 +68,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us</title>
         <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />
-        <meta name='keywords' content='Legal Brothers, Court Cases, Family Cases, Immigration, Child Custody, Property Drafting, Property Auditing, Legal Information, Government Acts, Advocates, Best Advocates in Lucknow, Best Advocate in Lucknow, Best Advocate in India, Best Advocate New Delhi, Best Advocates in Lucknow and Near Locations, Legal Information and queries, Legal Information, Legal Services, Court Representation, Legal Advice, Trial Attorneys, Court Proceedings, Legal Consultation, Legal Advocacy, Legal Aid, Criminal Defense, Civil Litigation, Legal Resources, Legal Support, Court Case Assistance, Legal Counsel, Judicial System, Legal Rights, Legal Assistance, Attorney Services, Courtroom Representation, Lucknow Legal Services, Lucknow Court Representation, Lucknow Trial Attorneys, Lucknow Legal Consultation, Court Case Help in Lucknow' />
+        <meta name='keywords' content='Legal Brothers, Court Cases, Family Cases, Immigration, Child Custody, Property Drafting, Property Auditing, Legal Information, Government Acts, Advocates, Best Advocates in Lucknow, Best Advocate in Lucknow, Best Advocate in India, Best Advocate New Delhi, Best Advocates in Lucknow and Near Locations, Legal Information and queries, Legal Information, Legal Services, Court Representation, Legal Advice, Trial Attorneys, Court Proceedings, Legal Consultation, Legal Advocacy, Legal Aid, Criminal Defense, Civil Litigation, Legal Resources, Legal Support, Court Case Assistance, Legal Counsel, Judicial System, Legal Rights, Legal Assistance, Attorney Services, Courtroom Representation, Lucknow Legal Services, Lucknow Court Representation, Lucknow Trial Attorneys, Lucknow Legal Consultation, Court Case Help in Lucknow,Legal RoadmapAccident Advocacy,Justice Journey,Advocate Allies,Injury Insight,Legal Compass,Claim Clarity,Accident Advocates,Rights Rescued,Justice Junction' />
       </Helmet>
       <div className="bg-white">
         <center className="fs-4 text-primary bg-white border-bottom py-3">Contact Us Demo Page</center>
@@ -111,7 +111,7 @@ const Contact = () => {
                   <textarea name="message" value={finalquery} style={{ display: "none" }} />
                 </div>
                 <button className="btn border-0 rounded-0 mb-2 send-mail" value="Send">Send Mail</button>
-                <button className="btn border-0 rounded-0 ms-2 mb-2 call-btn" onClick={() => handleButtonClick(7668490213)}>Make a Call</button>
+                <button className="btn border-0 rounded-0 ms-2 mb-2 call-btn" onClick={() => handleButtonClick(8172846811)}>Make a Call</button>
                 <Link to="/" className="text-decoration-none">
                   <button className="btn ms-2 border-0 rounded-0 mb-2 back-home">Back to Home</button>
                 </Link>

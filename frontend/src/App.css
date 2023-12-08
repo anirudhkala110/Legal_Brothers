@@ -206,16 +206,20 @@ li {
   overflow-y: auto;
 }
 
-.width-more li:hover {
-  background: rgb(0, 166, 255);
-  color: white !important;
-  border-radius: 5px;
+.li-hover:hover {
+  background: rgba(29, 166, 240, 0.611);
   transition: .2s ease-in-out;
-  transform: scale(1.02);
+  transform: scale(1);
   font-family: 'Roboto Condensed', sans-serif;
   font-family: 'Titillium Web', sans-serif;
 }
-
+.li-hover:hover a{
+  color: white !important;
+  font-weight: 800;
+}
+.li-hover a{
+  color: #000 ;
+}
 .btn:focus {
   border: none !important;
   font-family: 'Roboto Condensed', sans-serif;
@@ -446,6 +450,22 @@ li {
 .circle {
   transition: .2s ease-in-out;
 }
-.circle:hover{
+
+.circle:hover {
   transform: scale(1.2);
+}
+
+.sub-main-topic {
+  color: rgb(0, 132, 255) !important;
+  transition: .3s ease-in-out;
+}
+
+.sub-main-topic:hover {
+  background-color: rgb(0, 110, 255);
+  color: white !important;
+  box-shadow: inset 0px 0px 50px #000;
+  border-radius: 5px !important;
+}
+.card-subjects{
+  scale: 0.95;
 }

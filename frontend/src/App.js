@@ -17,6 +17,7 @@ import PropertyAuditing from './Assest/PropertyAuditing';
 import { useEffect, useState } from 'react';
 import { Helmet } from "react-helmet"
 import StudentLaws from './Assest/StudentLaws';
+import AccidentalLaw from './Assest/AccidentalLaws';
 
 function App() {
   const initialI = parseInt(localStorage.getItem('i')) || 0;
@@ -53,15 +54,15 @@ function App() {
               </div>
             </div>
             <div className='card-footer bg-black'>
-              <button className='btn border-0 text-white w-100' onClick={e => handleButtonClick(7668490213)} style={{ background: "#D90700" }}>
+              <button className='btn border-0 text-white w-100' onClick={e => handleButtonClick(8172846811)} style={{ background: "#D90700" }}>
                 <span class="bi bi-telephone-fill fw-bold" >&nbsp;&nbsp;Call Now</span>
               </button>
             </div>
           </div>
         </div> :
           <div>
-            <button className='btn slider text-white' onClick={e => handleButtonClick(7668490213)} style={{ background: "#D90700" }}>
-              <div><b><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;<strong>CALL NOW</strong></b> <br className='br-in-slider' /><span className='Number'>+91-7668490213</span></div>
+            <button className='btn slider text-white' onClick={e => handleButtonClick(8172846811)} style={{ background: "#D90700" }}>
+              <div><b><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;<strong>CALL NOW</strong></b> <br className='br-in-slider' /><span className='Number'>+91-8172846811</span></div>
             </button>
             <div className="App min-vh-100">
               <Navbar />
@@ -69,7 +70,7 @@ function App() {
                 <Helmet>
                   <title>Legal Brothers</title>
                   <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />
-                  <meta name='keywords' content='Legal Brothers, Court Cases, Family Cases, Immigration, Child Custody, Property Drafting, Property Auditing, Legal Information, Government Acts, Advocates, Best Advocates in Lucknow, Best Advocate in Lucknow, Best Advocate in India, Best Advocate New Delhi, Best Advocates in Lucknow and Near Locations, Legal Information and queries, Legal Information, Legal Services, Court Representation, Legal Advice, Trial Attorneys, Court Proceedings, Legal Consultation, Legal Advocacy, Legal Aid, Criminal Defense, Civil Litigation, Legal Resources, Legal Support, Court Case Assistance, Legal Counsel, Judicial System, Legal Rights, Legal Assistance, Attorney Services, Courtroom Representation, Lucknow Legal Services, Lucknow Court Representation, Lucknow Trial Attorneys, Lucknow Legal Consultation, Court Case Help in Lucknow' />
+                  <meta name='keywords' content='Legal Brothers, Court Cases, Family Cases, Immigration, Child Custody, Property Drafting, Property Auditing, Legal Information, Government Acts, Advocates, Best Advocates in Lucknow, Best Advocate in Lucknow, Best Advocate in India, Best Advocate New Delhi, Best Advocates in Lucknow and Near Locations, Legal Information and queries, Legal Information, Legal Services, Court Representation, Legal Advice, Trial Attorneys, Court Proceedings, Legal Consultation, Legal Advocacy, Legal Aid, Criminal Defense, Civil Litigation, Legal Resources, Legal Support, Court Case Assistance, Legal Counsel, Judicial System, Legal Rights, Legal Assistance, Attorney Services, Courtroom Representation, Lucknow Legal Services, Lucknow Court Representation, Lucknow Trial Attorneys, Lucknow Legal Consultation, Court Case Help in Lucknow,Legal RoadmapAccident Advocacy,Justice Journey,Advocate Allies,Injury Insight,Legal Compass,Claim Clarity,Accident Advocates,Rights Rescued,Justice Junction' />
                 </Helmet>
                 <Routes>
                   <Route exact path="/" element={<Landing />} />
@@ -84,6 +85,7 @@ function App() {
                   <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
                   <Route exact path="/terms-conditions" element={<TermsConditions />} />
                   <Route exact path="/accessibility" element={<Accessibility />} />
+                  <Route exact path="/accidental-laws" element={<AccidentalLaw />} />
                 </Routes>
               </Router>
               <Footer />

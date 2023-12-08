@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className='bg-light'>
             <Helmet>
                 <meta name='description' content='At Legal Brothers, we are committed to delivering exceptional legal services to our clients. Our team of experienced attorneys is dedicated to ensuring that your legal needs are met with the utmost professionalism, expertise, and care. Whether you are facing a complex legal issue or seeking legal advice, we are here to guide you through the process and provide the best possible legal solutions.' />
-                <meta name='keywords' content='Legal Brothers, Court Cases, Family Cases, Immigration, Child Custody, Property Drafting, Property Auditing, Legal Information, Government Acts, Advocates, Best Advocates in Lucknow, Best Advocate in Lucknow, Best Advocate in India, Best Advocate New Delhi, Best Advocates in Lucknow and Near Locations, Legal Information and queries, Legal Information, Legal Services, Court Representation, Legal Advice, Trial Attorneys, Court Proceedings, Legal Consultation, Legal Advocacy, Legal Aid, Criminal Defense, Civil Litigation, Legal Resources, Legal Support, Court Case Assistance, Legal Counsel, Judicial System, Legal Rights, Legal Assistance, Attorney Services, Courtroom Representation, Lucknow Legal Services, Lucknow Court Representation, Lucknow Trial Attorneys, Lucknow Legal Consultation, Court Case Help in Lucknow' />
+                <meta name='keywords' content='Legal Brothers, Court Cases, Family Cases, Immigration, Child Custody, Property Drafting, Property Auditing, Legal Information, Government Acts, Advocates, Best Advocates in Lucknow, Best Advocate in Lucknow, Best Advocate in India, Best Advocate New Delhi, Best Advocates in Lucknow and Near Locations, Legal Information and queries, Legal Information, Legal Services, Court Representation, Legal Advice, Trial Attorneys, Court Proceedings, Legal Consultation, Legal Advocacy, Legal Aid, Criminal Defense, Civil Litigation, Legal Resources, Legal Support, Court Case Assistance, Legal Counsel, Judicial System, Legal Rights, Legal Assistance, Attorney Services, Courtroom Representation, Lucknow Legal Services, Lucknow Court Representation, Lucknow Trial Attorneys, Lucknow Legal Consultation, Court Case Help in Lucknow,Legal RoadmapAccident Advocacy,Justice Journey,Advocate Allies,Injury Insight,Legal Compass,Claim Clarity,Accident Advocates,Rights Rescued,Justice Junction' />
             </Helmet>
             <nav class="navbar bg-black text-light py-0 px-5" style={{ maxHeight: "" }}>
                 {/* <nav class="navbar bg-black text-light py-0 px-5" style={{maxHeight:""}}> */}
@@ -32,24 +32,24 @@ const Navbar = () => {
                         <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Focus Area
                         </a>
-                        <ul className='dropdown-menu px-2 width-more' style={{ listStyle: "none", maxHeight: "300px" }}>
-                            <li> <a href='/family-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Child Custody</a></li>
-                            <li> <a href='/family-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Spousal Support</a></li>
-                            <li> <a href='/family-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Adoption</a></li>
-                            <li> <a href='/family-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Divorce</a></li>
-                            <li> <a href='/criminal-defense' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Misdemeanors</a></li>
-                            <li> <a href='/criminal-defense' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Felonies</a></li>
-                            <li> <a href='/business-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Contract Drafting</a></li>
-                            <li> <a href='/business-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Business Information</a></li>
-                            <li> <a href='/business-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black " >Intellectual Properties</a></li>
-                            <li> <a href='/business-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Employment Law</a></li>
-                            <li> <a href='/immigration-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Visa Applications</a></li>
-                            <li> <a href='/immigration-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Green Card Processes</a></li>
-                            <li> <a href='/immigration-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Deportation</a></li>
-                            <li> <a href='/property-auditing-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Property Law</a></li>
-                            <li> <a href='/property-auditing-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Taxation Laws</a></li>
-                            <li> <a href='/property-auditing-law' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Constitutional Perspective</a></li>
-                            <li> <a href='/student-laws' className="text-decoration-none mb-2 ps-1 py-1 d-flex align-items-center justify-content-start text-black" >Student Section</a></li>
+                        <ul className='dropdown-menu width-more' style={{ listStyle: "none", maxHeight: "250px", width: "200px" }}>
+                            <li className='px-3 py-1 li-hover'> <a href='/family-law' className="text-decoration-none" >Child Custody</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/family-law' className="text-decoration-none" >Spousal Support</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/family-law' className="text-decoration-none" >Adoption</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/family-law' className="text-decoration-none" >Divorce</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/criminal-defense' className="text-decoration-none" >Misdemeanors</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/criminal-defense' className="text-decoration-none" >Felonies</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/business-law' className="text-decoration-none" >Contract Drafting</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/business-law' className="text-decoration-none" >Business Information</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/business-law' className="text-decoration-none" >Intellectual Properties</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/business-law' className="text-decoration-none" >Employment Law</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/immigration-law' className="text-decoration-none" >Visa Applications</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/immigration-law' className="text-decoration-none" >Green Card Processes</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/immigration-law' className="text-decoration-none" >Deportation</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Property Law</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Taxation Laws</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Constitutional Perspective</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/student-laws' className="text-decoration-none" >Student Section</a></li>
                         </ul>
                     </li>
                     {/* <li class="nav-item rounded-0 mx-3 btn text-light dropdown">
@@ -92,23 +92,24 @@ const Navbar = () => {
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Focus Area
                                 </a>
-                                <ul className='dropdown-menu text-dark offcanvas-li' style={{ listStyle: "none" }}>
-                                    <li> <a href='/family-law' className="text-decoration-none mb-2 text-black ps-3" >Child Custody</a></li>
-                                    <li> <a href='/family-law' className="text-decoration-none mb-2 text-black ps-3" >Spousal Support</a></li>
-                                    <li> <a href='/family-law' className="text-decoration-none mb-2 text-black ps-3" >Adoption</a></li>
-                                    <li> <a href='/family-law' className="text-decoration-none mb-2 text-black ps-3" >Divorce</a></li>
-                                    <li> <a href='/criminal-defense' className="text-decoration-none mb-2 text-black ps-3" >Misdemeanors</a></li>
-                                    <li> <a href='/criminal-defense' className="text-decoration-none mb-2 text-black ps-3" >Felonies</a></li>
-                                    <li> <a href='/business-law' className="text-decoration-none mb-2 text-black ps-3" >Contract Drafting</a></li>
-                                    <li> <a href='/business-law' className="text-decoration-none mb-2 text-black ps-3" >Business Information</a></li>
-                                    <li> <a href='/business-law' className="text-decoration-none mb-2 text-black ps-3" >Intellectual Properties</a></li>
-                                    <li> <a href='/business-law' className="text-decoration-none mb-2 text-black ps-3" >Employment Law</a></li>
-                                    <li> <a href='/immigration-law' className="text-decoration-none mb-2 text-black ps-3" >Visa Applications</a></li>
-                                    <li> <a href='/immigration-law' className="text-decoration-none mb-2 text-black ps-3" >Green Card Processes</a></li>
-                                    <li> <a href='/immigration-law' className="text-decoration-none mb-2 text-black ps-3" >Deportation</a></li>
-                                    <li> <a href='/property-auditing-law' className="text-decoration-none mb-2 text-black ps-3" >Property Laws</a></li>
-                                    <li> <a href='/property-auditing-law' className="text-decoration-none mb-2 text-black ps-3" >Taxation Laws</a></li>
-                                    <li> <a href='/property-auditing-law' className="text-decoration-none mb-2 text-black ps-3" >Constitutional Perspective</a></li>
+                                <ul className='dropdown-menu width-more' style={{ listStyle: "none", maxHeight: "250px", width: "200px" }}>
+                                    <li className='px-3 py-1 li-hover'> <a href='/family-law' className="text-decoration-none" >Child Custody</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/family-law' className="text-decoration-none" >Spousal Support</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/family-law' className="text-decoration-none" >Adoption</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/family-law' className="text-decoration-none" >Divorce</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/criminal-defense' className="text-decoration-none" >Misdemeanors</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/criminal-defense' className="text-decoration-none" >Felonies</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/business-law' className="text-decoration-none" >Contract Drafting</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/business-law' className="text-decoration-none" >Business Information</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/business-law' className="text-decoration-none" >Intellectual Properties</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/business-law' className="text-decoration-none" >Employment Law</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/immigration-law' className="text-decoration-none" >Visa Applications</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/immigration-law' className="text-decoration-none" >Green Card Processes</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/immigration-law' className="text-decoration-none" >Deportation</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Property Law</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Taxation Laws</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Constitutional Perspective</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/student-laws' className="text-decoration-none" >Student Section</a></li>
                                 </ul>
                             </li>
                             {/* <li class="nav-item dropdown">
