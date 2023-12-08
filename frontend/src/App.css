@@ -394,7 +394,7 @@ li {
   display: none;
 }
 
-.ImageSlider{
+.ImageSlider {
   background-color: rgba(213, 202, 202, 0.2);
 }
 
@@ -439,4 +439,11 @@ li {
   fill: black;
   width: 2rem;
   height: 2rem;
+}
+
+.circle {
+  transition: .2s ease-in-out;
+}
+.circle:hover{
+  transform: scale(1.2);
 }

@@ -9,6 +9,7 @@ import BL from "../Images/BusForm.png"
 import Visa from "../Images/visa.png"
 import Property from "../Images/property.png"
 import Logo from '../Images/logo.png'
+import Rt from '../Images/right.png'
 import ImageSlider from '../Images/ImageSlider'
 
 
@@ -100,7 +101,7 @@ const Landing = () => {
                             </div>
                         </div>
                     </div>
-                    <div style={{margin: "0 auto", position: "relative",maxHeight:"450px" }} className='ImageSlider py-2 bg-light'>
+                    <div style={{ margin: "0 auto", position: "relative", maxHeight: "450px" }} className='ImageSlider py-2 bg-light'>
                         <ImageSlider />
                     </div>
                     <div className='my-5 p-1' style={{ background: "black", minHeight: "10vh" }}>
@@ -155,6 +156,12 @@ const Landing = () => {
                                     <div className='fs-4 my-2 fw-bold btn btn-outline-primary w-100'>Property Auditing</div>
                                     <hr />
                                     <div>In India, the legal framework for properties auditing primarily falls under the purview of property laws, taxation laws, and corporate laws.</div>
+                                </Link>
+                                <Link to='/student-laws' className=' col-sm-12 g-2 text-decoration-none text-black border p-3 col-md-6 col-xl-3 mb-3 '>
+                                    <img src={Rt} width={60} />
+                                    <div className='fs-4 my-2 fw-bold btn btn-outline-primary w-100'>Student Laws</div>
+                                    <hr />
+                                    In <b>India, </b> An advocate, specializing in education law in India, can handle various legal matters related to students, educational institutions, and the education system.
                                 </Link>
                             </div>
                         </div>

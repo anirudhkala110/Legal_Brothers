@@ -35,7 +35,7 @@ const StudentLaws = () => {
                     </div>
                     <hr />
                     <div>
-                        <div className='fs-4 fw-semibold' style={{ color: "rgb(217, 7, 0)" }}>04. &nbsp;&nbsp;Institutional Compliance</div>
+                        <div className='fs-4 fw-semibold' style={{ color: "rgb(217, 7, 0)" }}>03. &nbsp;&nbsp;Institutional Compliance</div>
                         <div className='px-5 '>
                             {/* <ol className='' style={{listStyle:""}}> */}
                             {/* <li><b className=''>- </b>This article of the Indian Constitution guarantees the right to practice any profession, or to carry on any occupation, trade, or business. Property auditing can be seen as part of the legitimate business activities protected under this provision.</li> */}
@@ -45,7 +45,7 @@ const StudentLaws = () => {
                     </div>
                     <hr />
                     <div>
-                        <div className='fs-4 fw-semibold' style={{ color: "rgb(217, 7, 0)" }}>05. &nbsp;&nbsp;Employment Issues in Education</div>
+                        <div className='fs-4 fw-semibold' style={{ color: "rgb(217, 7, 0)" }}>04. &nbsp;&nbsp;Employment Issues in Education</div>
                         <div className='px-5 '>
                             {/* <ol className='' style={{listStyle:""}}> */}
                             {/* <li><b className=''>- </b>This article of the Indian Constitution guarantees the right to practice any profession, or to carry on any occupation, trade, or business. Property auditing can be seen as part of the legitimate business activities protected under this provision.</li> */}
@@ -55,7 +55,7 @@ const StudentLaws = () => {
                     </div>
                     <hr />
                     <div>
-                        <div className='fs-4 fw-semibold' style={{ color: "rgb(217, 7, 0)" }}>03. &nbsp;&nbsp;Special Education Advocacy</div>
+                        <div className='fs-4 fw-semibold' style={{ color: "rgb(217, 7, 0)" }}>05. &nbsp;&nbsp;Special Education Advocacy</div>
                         <div className='px-5 '>
                             {/* <ol className='' style={{listStyle:""}}> */}
                             {/* <li><b className=''>- </b>This article of the Indian Constitution guarantees the right to practice any profession, or to carry on any occupation, trade, or business. Property auditing can be seen as part of the legitimate business activities protected under this provision.</li> */}

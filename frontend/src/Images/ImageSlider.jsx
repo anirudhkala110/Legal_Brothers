@@ -52,7 +52,7 @@ const ImageSlider = () => {
                 <img
                     src={imageUrls[imageIndex]}
                     alt={`Slider Image ${imageIndex + 1}`}
-                    className="img-slider-img rounded"
+                    className="img-slider-img  p-1 rounded"
                     style={{ aspectRatio: '1', maxHeight: '300px', width: 'auto' }}
                 />
             </center>
@@ -65,7 +65,7 @@ const ImageSlider = () => {
             <center className='my-1'>
                 {
                     imageUrls.map((_, index) => (
-                        <button key={index} onClick={e => setImageIndex(index)} className='btn p-1'>{index === imageIndex ? <CircleDot  className="bg-dark text-light rounded-5 shadow" style={{ scale: ".8", transition: ".2s ease-in-out" }} /> : <Circle  className="bg-dark text-light rounded-5 shadow" style={{ scale: ".5", transition: ".2s ease-in-out" }} />}</button>
+                        <button key={index} onClick={e => setImageIndex(index)} className='btn p-1'>{index === imageIndex ? <CircleDot  className="bg-dark text-light circle rounded-5 shadow" style={{ scale: ".8", transition: ".2s ease-in-out" }} /> : <Circle  className="bg-dark text-light rounded-5 shadow circle" style={{ scale: ".5", transition: ".2s ease-in-out" }} />}</button>
                     ))
                 }
             </center>
