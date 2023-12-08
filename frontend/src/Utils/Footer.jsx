@@ -42,15 +42,15 @@ const Footer = () => {
                         Areas of Practice
                     </div>
                     <div className='footer-element-focus-area' style={{ listStyle: "disc" }}>
-                        <div className='mx-1'>
-                            <div> <a href='/family-law' className="text-decoration-none mb-2  text-light" >1. &nbsp;&nbsp;Family-law</a></div>
-                            <div> <a href='/criminal-defense' className="text-decoration-none mb-2  text-light" >2. &nbsp;&nbsp;Criminal-Defense</a></div>
-                            <div> <a href='/business-law' className="text-decoration-none mb-2  text-light" >3. &nbsp;&nbsp;Business-Law & Corporatins</a></div>
+                        <div className='me-1'>
+                            <div><a href='/family-law' className="text-decoration-none mb-2  text-light" >1. &nbsp;&nbsp;Family-law</a></div>
+                            <div><a href='/criminal-defense' className="text-decoration-none mb-2  text-light" >2. &nbsp;&nbsp;Criminal-Defense</a></div>
+                            <div><a href='/business-law' className="text-decoration-none mb-2  text-light" >3. &nbsp;&nbsp;Business-Law & Corporatins</a></div>
                         </div>
-                        <div className='mx-1'>
-                            <div> <a href='/immigration-law' className="text-decoration-none mb-2 text-light" >4. &nbsp;&nbsp;Immigration-Law</a></div>
-                            <div> <a href='/property-auditing-law' className="text-decoration-none mb-2 text-light" >5. &nbsp;&nbsp;Property-Auditing-Law</a></div>
-                            <div> <a href='/student-laws' className="text-decoration-none mb-2 text-light" >6. &nbsp;&nbsp;Student-Law</a></div>
+                        <div className='ms-1'>
+                            <div><a href='/immigration-law' className="text-decoration-none mb-2 text-light" >4. &nbsp;&nbsp;Immigration-Law</a></div>
+                            <div><a href='/property-auditing-law' className="text-decoration-none mb-2 text-light" >5. &nbsp;&nbsp;Property-Auditing-Law</a></div>
+                            <div><a href='/student-laws' className="text-decoration-none mb-2 text-light" >6. &nbsp;&nbsp;Student-Law</a></div>
                         </div>
                     </div>
                 </div>

@@ -363,7 +363,7 @@ li {
     position: fixed;
     margin-top: 10vh !important;
     margin-left: 150vw !important;
-    /* margin-right: 10vw; */
+    transition: .2s ease-in-out;
     z-index: 100;
   }
 
@@ -383,6 +383,7 @@ li {
 
 .slider span {
   display: none;
+  transition: .2s ease-in-out;
 }
 
 .slider:hover span {
@@ -392,6 +393,7 @@ li {
 .slider:hover b,
 .br-in-slider {
   display: none;
+  transition: .2s ease-in-out;
 }
 
 .ImageSlider {
