@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import help from '../Images/helphand.png';
+import help from '../Images/PNGs/helphand.png';
 import axios from 'axios'
 import emailjs from '@emailjs/browser';
 import { Helmet } from 'react-helmet';

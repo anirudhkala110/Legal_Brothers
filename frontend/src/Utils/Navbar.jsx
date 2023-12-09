@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/js/dist/offcanvas.js'
 import 'bootstrap/js/dist/dropdown.js'
-import logo from '../Images/logo.png'
+import logo from '../Images/PNGs/logo.png'
 import { Helmet } from 'react-helmet'
 const Navbar = () => {
     return (
@@ -25,6 +25,9 @@ const Navbar = () => {
                     {/* <li class="nav-item rounded-0 mx-1 btn">
                             <a class="nav-link text-light" href="/about-us">About</a>
                         </li> */}
+                    <li class="nav-item rounded-0 mx-1 btn">
+                        <a class="nav-link text-light" href="/Gallery">Image Gallery</a>
+                    </li>
                     <li class="nav-item rounded-0 mx-1 btn">
                         <a class="nav-link text-light" href="/all-case-study">Updates</a>
                     </li>
@@ -85,6 +88,9 @@ const Navbar = () => {
                             {/* <li class="nav-item">
                                     <a class="nav-link" href="/about-us">About</a>
                                 </li> */}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Gallery">Image Gallery</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/all-case-study">Updates</a>
                             </li>

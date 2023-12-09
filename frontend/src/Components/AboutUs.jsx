@@ -1,6 +1,6 @@
 import React from 'react'
-import right from '../Images/right.png'
-import left from '../Images/left.png'
+import right from '../Images/PNGs/right.png'
+import left from '../Images/PNGs/left.png'
 import { Helmet } from 'react-helmet'
 
 

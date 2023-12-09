@@ -18,6 +18,7 @@ import { useEffect, useState } from 'react';
 import { Helmet } from "react-helmet"
 import StudentLaws from './Assest/StudentLaws';
 import AccidentalLaw from './Assest/AccidentalLaws';
+import ImageGallery from './Images/ImageGallery';
 
 function App() {
   const initialI = parseInt(localStorage.getItem('i')) || 0;
@@ -86,6 +87,7 @@ function App() {
                   <Route exact path="/terms-conditions" element={<TermsConditions />} />
                   <Route exact path="/accessibility" element={<Accessibility />} />
                   <Route exact path="/accidental-laws" element={<AccidentalLaw />} />
+                  <Route exact path="/Gallery" element={<ImageGallery />} />
                 </Routes>
               </Router>
               <Footer />

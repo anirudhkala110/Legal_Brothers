@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import sadv from "../Images/Sadv.png"
-import cdd from "../Images/cdd.png"
-import exp from "../Images/exp.png"
-import FL from "../Images/security.png"
-import CD from "../Images/felonies.png"
-import BL from "../Images/BusForm.png"
-import Visa from "../Images/visa.png"
-import Property from "../Images/property.png"
-import Logo from '../Images/logo.png'
-import Rt from '../Images/right.png'
+import sadv from "../Images/Gallery/main2.jpg"
+import cdd from "../Images/PNGs/cdd.png"
+import exp from "../Images/PNGs/exp.png"
+import FL from "../Images/PNGs/security.png"
+import CD from "../Images/PNGs/felonies.png"
+import BL from "../Images/PNGs/BusForm.png"
+import Visa from "../Images/PNGs/visa.png"
+import Property from "../Images/PNGs/property.png"
+import Logo from '../Images/PNGs/logo.png'
+import Rt from '../Images/PNGs/right.png'
+import accident from '../Images/PNGs/accident.png'
 import ImageSlider from '../Images/ImageSlider'
 import { Helmet } from 'react-helmet'
 
@@ -82,10 +83,10 @@ const Landing = () => {
                                     </div>
                                 </div>
                                 <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
-                                    <img className='w-50' src={sadv} style={{ backdropFilter: "drop-shadow(2px 4px 6px black)", width: "100%" }} />
+                                    <img className='shadow rounded-3 card' src={sadv} style={{ backdropFilter: "drop-shadow(2px 4px 6px black)", width: "100%" }} />
                                 </div>
                             </div>
-                            <div className='row'>
+                            <div className='row my-5'>
                                 <div className='col-sm-12 col-lg-3 shadow mb-2 py-3 px-2'>
                                     <span className='d-flex mb-3 align-items-center justify-content-start'>
                                         <img src={exp} width={40} className='me-3' />
@@ -107,7 +108,7 @@ const Landing = () => {
                             </div>
                         </div>
                     </div>
-                    <div style={{ margin: "0 auto", position: "relative", maxHeight: "450px" }} className='ImageSlider py-2 bg-light'>
+                    <div style={{ margin: "0 auto", position: "relative", maxHeight: "450px",maxWidth:"1920px" }} className='ImageSlider py-2 bg-white'>
                         <ImageSlider />
                     </div>
                     <div className='my-5 d-flex justify-content-center p-1' style={{ background: "black", minHeight: "20vh" }}>
@@ -179,7 +180,7 @@ const Landing = () => {
                                 </Link>
                                 <Link to='/accidental-laws' className=' col-sm-12 g-2 rounded text-decoration-none text-black p-1 col-md-6 col-xl-3 mb-3 '>
                                     <div className='bg-white p-1 shadow rounded card-subjects' style={{ height: "100%" }}>
-                                        <img src={Rt} width={60} />
+                                        <img src={accident} width={60} />
                                         <center className='fs-4 my-2 fw-bold rounded-0 sub-main-topic border-0 border-primary w-100'>Injury Insight</center>
                                         <hr />
                                         <div className='p-2'> In <b>India, </b>In many cases, accidents involve personal injury, and personal injury law comes into play. If someone is injured due to the negligence of another party (such as a car accident), the injured party may have the right to seek compensation for medical expenses, lost wages, pain, and suffering. Personal injury lawyers often handle such cases.</div>
