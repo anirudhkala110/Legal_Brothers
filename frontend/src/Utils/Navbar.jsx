@@ -53,6 +53,7 @@ const Navbar = () => {
                             <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Taxation Laws</a></li>
                             <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Constitutional Perspective</a></li>
                             <li className='px-3 py-1 li-hover'> <a href='/student-laws' className="text-decoration-none" >Student Section</a></li>
+                            <li className='px-3 py-1 li-hover'> <a href='/accidental-laws' className="text-decoration-none" >Injury Insight</a></li>
                         </ul>
                     </li>
                     {/* <li class="nav-item rounded-0 mx-3 btn text-light dropdown">
@@ -116,6 +117,7 @@ const Navbar = () => {
                                     <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Taxation Laws</a></li>
                                     <li className='px-3 py-1 li-hover'> <a href='/property-auditing-law' className="text-decoration-none" >Constitutional Perspective</a></li>
                                     <li className='px-3 py-1 li-hover'> <a href='/student-laws' className="text-decoration-none" >Student Section</a></li>
+                                    <li className='px-3 py-1 li-hover'> <a href='/accidental-laws' className="text-decoration-none" >Injury Insight</a></li>
                                 </ul>
                             </li>
                             {/* <li class="nav-item dropdown">

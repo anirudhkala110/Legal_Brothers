@@ -2,23 +2,25 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Landing from './Components/Landing';
 import Navbar from './Utils/Navbar';
-import AboutUs from './Components/AboutUs';
 import Contact from './Components/Contact';
 import AllCasesStudies from './Components/AllCasesStudies';
-import FamilyLaw from './Assest/FamilyLaw';
-import CriminalDefence from './Assest/CriminalDefence';
-import BusinessLaw from './Assest/BusinessLaw';
-import ImmigrationLaw from './Assest/ImmigrationLaw';
+import FamilyLaw from './Assets/FamilyLaw';
+import CriminalDefence from './Assets/CriminalDefence';
+import BusinessLaw from './Assets/BusinessLaw';
+import ImmigrationLaw from './Assets/ImmigrationLaw';
 import Footer from './Utils/Footer';
 import PrivacyPolicy from './Utils/PrivacyPolicy';
 import TermsConditions from './Utils/TermsConditions';
 import Accessibility from './Utils/Accessibility';
-import PropertyAuditing from './Assest/PropertyAuditing';
+import PropertyAuditing from './Assets/PropertyAuditing';
 import { useEffect, useState } from 'react';
 import { Helmet } from "react-helmet"
-import StudentLaws from './Assest/StudentLaws';
-import AccidentalLaw from './Assest/AccidentalLaws';
+import StudentLaws from './Assets/StudentLaws';
+import AccidentalLaw from './Assets/AccidentalLaws';
 import ImageGallery from './Images/ImageGallery';
+import AddUpdate from './Components/AddUpdate';
+import LoginRegister from './Components/LoginRegister';
+
 
 function App() {
   const initialI = parseInt(localStorage.getItem('i')) || 0;
@@ -39,10 +41,10 @@ function App() {
   };
 
   return (
-    <div className='bg-black' style={{ minWidth: "350px" }}>
+    <div className='bg-black' style={{ minWidth: "380px" }}>
       {
         i === 0 ? <div className='min-vh-100 d-flex align-items-center justify-content-center bg-light'>
-          <div className='card w-25 starter border border-black'>
+          <div className='card w-25 starter border border-black' style={{ minWidth: "350px" }}>
             <div className='card-header fs-2 fw-bold bg-black text-white' >
               Hey ! ,
             </div>
@@ -88,6 +90,8 @@ function App() {
                   <Route exact path="/accessibility" element={<Accessibility />} />
                   <Route exact path="/accidental-laws" element={<AccidentalLaw />} />
                   <Route exact path="/Gallery" element={<ImageGallery />} />
+                  <Route exact path="/auth/isValid/:auth/add-update" element={<AddUpdate />} />
+                  <Route exact path="/auth/admin/login&register" element={<LoginRegister />} />
                 </Routes>
               </Router>
               <Footer />

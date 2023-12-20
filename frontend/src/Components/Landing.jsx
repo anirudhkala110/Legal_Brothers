@@ -108,7 +108,7 @@ const Landing = () => {
                             </div>
                         </div>
                     </div>
-                    <div style={{ margin: "0 auto", position: "relative", maxHeight: "450px",maxWidth:"1920px" }} className='ImageSlider py-2 bg-white'>
+                    <div style={{ margin: "0 auto", position: "relative", maxHeight: "450px",maxWidth:"1920px",minHeight:"350px" }} className='ImageSlider py-2 bg-white'>
                         <ImageSlider />
                     </div>
                     <div className='my-5 d-flex justify-content-center p-1' style={{ background: "black", minHeight: "20vh" }}>

@@ -42,13 +42,13 @@ const Contact = () => {
           }
         })
         .catch(err => console.log(err))
-      emailjs.sendForm('service_6cywveg', 'template_7rfedib', form.current, 'dvdh1BKhBwZ1IdY5y')
-        .then((result) => {
-          alert("Your  Query Has been saved.\nNow you are redirecting to the Homepage. . .")
-          navigate('/')
-        }, (error) => {
-          console.log(error.text);
-        });
+      // emailjs.sendForm('service_6cywveg', 'template_7rfedib', form.current, 'dvdh1BKhBwZ1IdY5y')
+      //   .then((result) => {
+      //     alert("Your  Query Has been saved.\nNow you are redirecting to the Homepage. . .")
+      //     navigate('/')
+      //   }, (error) => {
+      //     console.log(error.text);
+      //   });
     }
   }
 
